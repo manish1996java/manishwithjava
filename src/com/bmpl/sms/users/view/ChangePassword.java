@@ -12,7 +12,8 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import com.bmpl.sms.users.ChangePasswordDAO.ChangePasswordDAO;
+import com.bmpl.sms.users.DAO.ChangePasswordDAO;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 

@@ -57,6 +57,7 @@ public class LoginButtonScreen extends JWindow {
 			public void actionPerformed(ActionEvent e) {
 				LoginView loginview = new LoginView();
 				loginview.setVisible(true);
+				setVisible(false);
 			}
 		});
 		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 17));

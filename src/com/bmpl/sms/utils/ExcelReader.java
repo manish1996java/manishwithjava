@@ -46,11 +46,13 @@ public class ExcelReader {
 					if(columnCount == 1 ) {
 //						System.out.println(cell.getNumericCellValue());
 					}
-					if(columnCount == 2 && cell.getCellType() == CellType.NUMERIC) {
+//					if(columnCount == 2 && cell.getCellType() == CellType.NUMERIC) {
+					if(columnCount == 2) {
 //						System.out.println(Double.toString(cell.getNumericCellValue()));
 						cmnDTO.setDescription(Double.toString(cell.getNumericCellValue()).trim());
 					}
-					if(columnCount == 3 && cell.getCellType() == CellType.NUMERIC) {
+//					if(columnCount == 3 && cell.getCellType() == CellType.NUMERIC) {
+					if(columnCount == 3) {
 //						System.out.println(Double.toString(cell.getNumericCellValue()).trim());
 						cmnDTO.setValue(Double.toString(cell.getNumericCellValue()));
 					}
@@ -89,6 +91,11 @@ public class ExcelReader {
 //public static void main(String args[]) throws IOException
 //{
 //	ExcelReader.readExcel("D:\\sms.xlsx");
+//	ArrayList<CommonGenricDTO> dto = ExcelReader.readExcel("D:\\sms.xlsx");
+//	for(CommonGenricDTO dt:dto)
+//	{
+//		System.out.println(dt);
+//	}
 //}
 	
 }

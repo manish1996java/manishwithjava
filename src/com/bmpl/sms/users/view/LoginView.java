@@ -22,8 +22,9 @@ import javax.swing.border.EmptyBorder;
 import org.eclipse.wb.swing.FocusTraversalOnArray;
 
 import com.bmpl.sms.test.DashBoard;
-import com.bmpl.sms.users.UserDAO.UserDAO;
-import com.bmpl.sms.users.UserDTO.UserDTO;
+import com.bmpl.sms.users.DAO.UserDAO;
+import com.bmpl.sms.users.DTO.UserDTO;
+
 import java.awt.SystemColor;
 
 public class LoginView extends JFrame {
@@ -73,6 +74,7 @@ public class LoginView extends JFrame {
 			JOptionPane.showMessageDialog(this, "login Successfully", "login", JOptionPane.INFORMATION_MESSAGE);
 			AdminView adminview =  new AdminView();
 			adminview.setVisible(true);
+			setVisible(false);
 			}
 		}
 		else {
